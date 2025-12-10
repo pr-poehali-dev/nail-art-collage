@@ -7,9 +7,9 @@ const Index = () => {
   const slides = [
     // Слайд 1: Название салона и акция
     <div key="slide1" className="min-h-screen bg-white p-4 md:p-8 flex items-center justify-center">
-      <div className="w-full max-w-4xl aspect-square">
-        <div className="bg-gradient-to-br from-gray-100 to-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 h-full">
-          <div className="grid md:grid-cols-5 gap-0 h-full">
+      <div className="max-w-7xl w-full">
+        <div className="bg-gradient-to-br from-gray-100 to-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+          <div className="grid md:grid-cols-5 gap-0">
             
             <div className="md:col-span-2 bg-black p-8 md:p-12 flex flex-col justify-between">
               <div>
@@ -82,9 +82,9 @@ const Index = () => {
 
     // Слайд 2: Портфолио
     <div key="slide2" className="min-h-screen bg-white p-4 md:p-8 flex items-center justify-center">
-      <div className="w-full max-w-4xl aspect-square">
-        <div className="bg-gradient-to-br from-gray-100 to-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 h-full">
-          <div className="grid md:grid-cols-5 gap-0 h-full">
+      <div className="max-w-7xl w-full">
+        <div className="bg-gradient-to-br from-gray-100 to-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+          <div className="grid md:grid-cols-5 gap-0">
             
             <div className="md:col-span-2 bg-black p-8 md:p-12 flex flex-col justify-between">
               <div>
@@ -210,9 +210,9 @@ const Index = () => {
 
     // Слайд 3: Качество
     <div key="slide3" className="min-h-screen bg-white p-4 md:p-8 flex items-center justify-center">
-      <div className="w-full max-w-4xl aspect-square">
-        <div className="bg-gradient-to-br from-gray-100 to-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 h-full">
-          <div className="grid md:grid-cols-5 gap-0 h-full">
+      <div className="max-w-7xl w-full">
+        <div className="bg-gradient-to-br from-gray-100 to-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
+          <div className="grid md:grid-cols-5 gap-0">
             
             <div className="md:col-span-2 bg-black p-8 md:p-12 flex flex-col justify-between">
               <div>
