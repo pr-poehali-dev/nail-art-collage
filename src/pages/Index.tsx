@@ -1,8 +1,14 @@
 import Icon from "@/components/ui/icon";
+import NailCollage1 from "@/components/NailCollage1";
+import NailCollage2 from "@/components/NailCollage2";
+import NailCollage3 from "@/components/NailCollage3";
+import { useState } from "react";
 
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#1a0a1f] to-[#0f0520] p-4 md:p-8 flex items-center justify-center overflow-hidden">
+  const [currentCollage, setCurrentCollage] = useState(0);
+  
+  const collages = [
+    <div key="0" className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#1a0a1f] to-[#0f0520] p-4 md:p-8 flex items-center justify-center overflow-hidden">
       <div className="max-w-6xl w-full">
         <div className="bg-zinc-900/95 backdrop-blur-sm rounded-3xl shadow-2xl shadow-purple-900/50 overflow-hidden transform hover:scale-[1.02] transition-all duration-500 border border-purple-900/30">
           <div className="grid md:grid-cols-2 gap-0">
@@ -116,6 +122,48 @@ const Index = () => {
           </p>
         </div>
       </div>
+    </div>,
+    <NailCollage1 key="1" />,
+    <NailCollage2 key="2" />,
+    <NailCollage3 key="3" />
+  ];
+
+  return (
+    <div className="relative">
+      {collages[currentCollage]}
+      
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+        <div className="bg-black/80 backdrop-blur-md rounded-full p-2 flex gap-2 border border-white/10">
+          {collages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentCollage(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                currentCollage === index 
+                  ? 'bg-purple-500 w-8' 
+                  : 'bg-white/30 hover:bg-white/50'
+              }`}
+              aria-label={`Коллаж ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+      
+      <button
+        onClick={() => setCurrentCollage((prev) => (prev - 1 + collages.length) % collages.length)}
+        className="fixed left-4 top-1/2 -translate-y-1/2 z-50 bg-black/80 backdrop-blur-md p-3 rounded-full border border-white/10 hover:bg-black/90 transition-all duration-300"
+        aria-label="Предыдущий"
+      >
+        <Icon name="ChevronLeft" size={24} className="text-white" />
+      </button>
+      
+      <button
+        onClick={() => setCurrentCollage((prev) => (prev + 1) % collages.length)}
+        className="fixed right-4 top-1/2 -translate-y-1/2 z-50 bg-black/80 backdrop-blur-md p-3 rounded-full border border-white/10 hover:bg-black/90 transition-all duration-300"
+        aria-label="Следующий"
+      >
+        <Icon name="ChevronRight" size={24} className="text-white" />
+      </button>
     </div>
   );
 };
