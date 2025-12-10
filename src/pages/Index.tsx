@@ -2,107 +2,107 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FFBE0B] via-[#FF006E] to-[#8338EC] p-4 md:p-8 flex items-center justify-center overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#1a0a1f] to-[#0f0520] p-4 md:p-8 flex items-center justify-center overflow-hidden">
       <div className="max-w-6xl w-full">
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-500">
+        <div className="bg-zinc-900/95 backdrop-blur-sm rounded-3xl shadow-2xl shadow-purple-900/50 overflow-hidden transform hover:scale-[1.02] transition-all duration-500 border border-purple-900/30">
           <div className="grid md:grid-cols-2 gap-0">
             
-            <div className="relative p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-white to-pink-50">
-              <div className="absolute top-4 right-4 bg-[#8338EC] text-white px-4 py-2 rounded-full text-sm font-bold rotate-12 shadow-lg">
+            <div className="relative p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-zinc-900 to-zinc-950">
+              <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-rose-600 text-white px-4 py-2 rounded-full text-sm font-bold rotate-12 shadow-lg shadow-purple-500/50">
                 АКЦИЯ
               </div>
               
               <h1 className="text-5xl md:text-7xl font-black mb-6 leading-none" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                <span className="bg-gradient-to-r from-[#FF006E] via-[#8338EC] to-[#FB5607] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-rose-400 via-purple-400 to-violet-400 bg-clip-text text-transparent">
                   NAILS
                 </span>
                 <br />
-                <span className="text-[#8338EC]">STUDIO</span>
+                <span className="text-purple-400">STUDIO</span>
               </h1>
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <div className="bg-gradient-to-br from-[#FF006E] to-[#8338EC] p-2 rounded-xl">
+                  <div className="bg-gradient-to-br from-rose-600 to-purple-600 p-2 rounded-xl shadow-lg shadow-purple-500/30">
                     <Icon name="Sparkles" size={24} className="text-white" />
                   </div>
                   <div>
                     <p className="font-bold text-lg text-gray-900" style={{ fontFamily: 'Rubik, sans-serif' }}>
                       Трендовый маникюр 2024
                     </p>
-                    <p className="text-gray-600 text-sm">Уникальные дизайны и качество</p>
+                    <p className="text-zinc-400 text-sm">Уникальные дизайны и качество</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
-                  <div className="bg-gradient-to-br from-[#FB5607] to-[#FFBE0B] p-2 rounded-xl">
+                  <div className="bg-gradient-to-br from-violet-600 to-fuchsia-600 p-2 rounded-xl shadow-lg shadow-fuchsia-500/30">
                     <Icon name="Users" size={24} className="text-white" />
                   </div>
                   <div>
-                    <p className="font-bold text-lg text-gray-900" style={{ fontFamily: 'Rubik, sans-serif' }}>
+                    <p className="font-bold text-lg text-purple-100" style={{ fontFamily: 'Rubik, sans-serif' }}>
                       Приведи друга — скидка 20%
                     </p>
-                    <p className="text-gray-600 text-sm">Для вас и вашей подруги!</p>
+                    <p className="text-zinc-400 text-sm">Для вас и вашей подруги!</p>
                   </div>
                 </div>
               </div>
               
-              <button className="bg-gradient-to-r from-[#FF006E] via-[#8338EC] to-[#FB5607] text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300" style={{ fontFamily: 'Rubik, sans-serif' }}>
+              <button className="bg-gradient-to-r from-rose-600 via-purple-600 to-violet-600 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-xl shadow-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/70 transform hover:scale-105 transition-all duration-300" style={{ fontFamily: 'Rubik, sans-serif' }}>
                 Записаться сейчас
               </button>
               
               <div className="mt-8 flex gap-4">
-                <div className="bg-gradient-to-br from-pink-100 to-purple-100 px-4 py-2 rounded-xl">
-                  <p className="text-2xl font-black text-[#8338EC]" style={{ fontFamily: 'Montserrat, sans-serif' }}>1500₽</p>
-                  <p className="text-xs text-gray-600">От</p>
+                <div className="bg-gradient-to-br from-purple-900/50 to-rose-900/50 px-4 py-2 rounded-xl border border-purple-700/30">
+                  <p className="text-2xl font-black text-purple-300" style={{ fontFamily: 'Montserrat, sans-serif' }}>1500₽</p>
+                  <p className="text-xs text-zinc-400">От</p>
                 </div>
-                <div className="bg-gradient-to-br from-orange-100 to-yellow-100 px-4 py-2 rounded-xl">
-                  <p className="text-2xl font-black text-[#FB5607]" style={{ fontFamily: 'Montserrat, sans-serif' }}>2Ч</p>
-                  <p className="text-xs text-gray-600">Время</p>
+                <div className="bg-gradient-to-br from-violet-900/50 to-fuchsia-900/50 px-4 py-2 rounded-xl border border-violet-700/30">
+                  <p className="text-2xl font-black text-violet-300" style={{ fontFamily: 'Montserrat, sans-serif' }}>2Ч</p>
+                  <p className="text-xs text-zinc-400">Время</p>
                 </div>
               </div>
             </div>
 
-            <div className="relative p-6 md:p-8 bg-gradient-to-br from-[#8338EC] to-[#FF006E]">
+            <div className="relative p-6 md:p-8 bg-gradient-to-br from-purple-950 to-rose-950">
               <div className="grid grid-cols-2 gap-3 h-full">
                 
                 <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#FFBE0B] to-[#FB5607] rounded-2xl transform rotate-6 opacity-50 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-rose-600 to-purple-600 rounded-2xl transform rotate-6 opacity-40 group-hover:rotate-12 transition-transform duration-500"></div>
                   <img 
-                    src="https://cdn.poehali.dev/projects/f7cfef95-8176-4713-92b6-f39296340294/files/4c3f0efe-0b9c-40df-973e-069d6e766918.jpg" 
+                    src="https://cdn.poehali.dev/projects/f7cfef95-8176-4713-92b6-f39296340294/files/b9c4daa3-021d-44f2-a597-52f52121f41b.jpg" 
                     alt="Маникюр 1" 
                     className="relative rounded-2xl w-full h-full object-cover shadow-2xl transform -rotate-3 group-hover:rotate-0 transition-transform duration-500"
                   />
                 </div>
 
                 <div className="relative group mt-8">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#FF006E] to-[#8338EC] rounded-2xl transform -rotate-6 opacity-50 group-hover:-rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-violet-600 to-fuchsia-600 rounded-2xl transform -rotate-6 opacity-40 group-hover:-rotate-12 transition-transform duration-500"></div>
                   <img 
-                    src="https://cdn.poehali.dev/projects/f7cfef95-8176-4713-92b6-f39296340294/files/9c23149a-afae-4079-b0a3-18045461dd4f.jpg" 
+                    src="https://cdn.poehali.dev/projects/f7cfef95-8176-4713-92b6-f39296340294/files/725b1f73-38e0-4d3d-b8e6-d37087ef0a9a.jpg" 
                     alt="Маникюр 2" 
                     className="relative rounded-2xl w-full h-full object-cover shadow-2xl transform rotate-6 group-hover:rotate-0 transition-transform duration-500"
                   />
                 </div>
 
                 <div className="relative group -mt-8">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#8338EC] to-[#FFBE0B] rounded-2xl transform rotate-3 opacity-50 group-hover:rotate-6 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-rose-600 rounded-2xl transform rotate-3 opacity-40 group-hover:rotate-6 transition-transform duration-500"></div>
                   <img 
-                    src="https://cdn.poehali.dev/projects/f7cfef95-8176-4713-92b6-f39296340294/files/9ac816f4-8a9f-473d-817c-9f99175f7183.jpg" 
+                    src="https://cdn.poehali.dev/projects/f7cfef95-8176-4713-92b6-f39296340294/files/c9c0fe4f-bdb8-4ce4-b687-bfd0bbc2785a.jpg" 
                     alt="Маникюр 3" 
                     className="relative rounded-2xl w-full h-full object-cover shadow-2xl transform -rotate-6 group-hover:rotate-0 transition-transform duration-500"
                   />
                 </div>
 
                 <div className="relative flex items-center justify-center">
-                  <div className="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                    <p className="text-4xl font-black text-[#FF006E] text-center mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>20%</p>
-                    <p className="text-sm font-bold text-gray-800 text-center" style={{ fontFamily: 'Rubik, sans-serif' }}>За друга</p>
+                  <div className="bg-zinc-900/90 backdrop-blur-md rounded-2xl p-6 shadow-2xl shadow-purple-500/50 border border-purple-600/30 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <p className="text-4xl font-black text-rose-400 text-center mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>20%</p>
+                    <p className="text-sm font-bold text-purple-200 text-center" style={{ fontFamily: 'Rubik, sans-serif' }}>За друга</p>
                   </div>
                 </div>
               </div>
 
-              <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-xl">
-                <p className="text-xs font-bold text-gray-800 flex items-center gap-2" style={{ fontFamily: 'Rubik, sans-serif' }}>
-                  <Icon name="Instagram" size={16} className="text-[#FF006E]" />
+              <div className="absolute bottom-4 right-4 bg-zinc-900/90 backdrop-blur-md px-4 py-2 rounded-full shadow-xl border border-purple-600/30">
+                <p className="text-xs font-bold text-purple-200 flex items-center gap-2" style={{ fontFamily: 'Rubik, sans-serif' }}>
+                  <Icon name="Instagram" size={16} className="text-rose-400" />
                   @nails.studio
                 </p>
               </div>
@@ -111,7 +111,7 @@ const Index = () => {
         </div>
 
         <div className="mt-6 text-center">
-          <p className="text-white/80 text-sm font-medium" style={{ fontFamily: 'Rubik, sans-serif' }}>
+          <p className="text-purple-300/80 text-sm font-medium" style={{ fontFamily: 'Rubik, sans-serif' }}>
             📍 Москва, ул. Примерная, 123 • 📞 +7 (999) 123-45-67
           </p>
         </div>
